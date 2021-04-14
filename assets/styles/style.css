@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #212529;
+}
+
+body {
+  background-color: #e9ecef;
+}
+
+/*Barre de navigation*/
+.navbarContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar {
+  background-color: #233d4d;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 3px 3px 3px #c6c7c9;
+  z-index: 0;
+}
+
+.navbar .logo {
+  text-align: center;
+}
+
+.navbar .logo h1 {
+  margin-left: 1vw;
+  color: #fe7f2d;
+}
+
+.navbar .logo h3 {
+  color: #adb5bd;
+}
+
+.navbar a,
+.navbar .name {
+  text-decoration: none;
+  color: #e9ecef;
+  margin-right: 5vw;
+}
+.navbar a:hover {
+  color: #fe7f2d;
+}
+
+.navbar #connectUser p {
+  display: inline;
+}
+.navbar .name {
+  font-size: 110%;
+}
+
+.content,
+.flex,
+#adPageContent {
+  margin-top: 110px;
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*HOME*/
+#createAd {
+  height: 40px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+#createAd #addAd {
+  cursor: pointer;
+}
+
+#createAd h3 {
+  background-color: #233d4d;
+  color: #fe7f2d;
+  margin-bottom: 10px;
+}
+#createAd h3:hover {
+  color: #e9ecef;
+}
+
+#createAd {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: white;
+  text-align: center;
+}
+
+#createAd h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#createAd p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#displayAd {
+  width: 60vw;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#displayAd .ad {
+  width: 29vw;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#displayAd .ad h4 {
+  font-size: 110%;
+}
+
+#displayAd .filterAd h3 {
+  background-color: #233d4d;
+  color: #e9ecef;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/*FORMULAIRE*/
+.lineForm {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.lineForm label {
+  width: 25%;
+  margin-left: 30%;
+  text-align: left;
+}
+
+.lineForm p {
+  margin-left: 10px;
+  /*position: relative;
+  left: -30px;*/
+}
+
+.lineForm input,
+.lineForm textarea,
+.btn input,
+.btn p {
+  width: 20%;
+  border: none;
+  background-color: #e9ecef;
+  padding: 5px;
+}
+.lineForm textarea {
+  resize: none;
+}
+
+.btn {
+  padding: 2vh;
+}
+
+.btn input,
+.btn p {
+  cursor: pointer;
+}
+.btn input:hover,
+.btn p:hover {
+  background-color: #233d4d;
+  color: #e9ecef;
+}
+.btn p {
+  width: 19%;
+  font-size: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn #annulermodif {
+  margin-top: 20px;
+}
+
+/*HOME*/
+#displayAd {
+  text-align: center;
+}
+
+#displayAd .ad .contentAd {
+  text-align: left;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e9ecef;
+}
+#displayAd .ad .contentAd p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#displayAd .ad .contentAd .linkAd {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+#displayAd .ad .contentAd .linkAd a {
+  color: #fe7f2d;
+}
+
+/*___Connexion et inscription___*/
+.flex {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30vh;
+}
+
+#connection,
+#inscription {
+  width: 30vw;
+  background-color: white;
+  text-align: center;
+}
+
+#connection .lineForm input,
+#inscription .lineForm input,
+#connection .btn input,
+#inscription .btn input {
+  width: 30%;
+}
+#connection .lineForm label,
+#inscription .lineForm label {
+  width: 30%;
+  margin-left: 20%;
+}
+#connection h3,
+#inscription h3 {
+  background-color: #233d4d;
+  color: #e9ecef;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#connection form,
+#inscription form {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* ____ Page des annonces ____*/
+#adPageContent {
+  margin-bottom: 15vh;
+}
+#adPageContent .adpage {
+  background-color: white;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+#adPageContent h3 {
+  text-align: center;
+  background-color: #233d4d;
+  color: #e9ecef;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#adPageContent #contentAdPage {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#adPageContent #contentAdPage p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#adPageContent #contentAdPage .date {
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+#adPageContent #contentAdPage .color {
+  color: #fe7f2d;
+}
+#adPageContent #contentAdPage .size {
+  font-size: 110%;
+}
+#adPageContent #contentAdPage .center {
+  text-align: center;
+}
+
+#adPageContent #contentAdPage #adEnchere {
+  text-align: center;
+}
+#adPageContent #contentAdPage #adEnchere .inputEnchere input:hover {
+  background-color: #e9ecef;
+  cursor: text;
+  color: #212529;
+}
+#adPageContent #infoSeller {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#adPageContent #infoSeller h4 {
+  width: 100%;
+  background-color: #233d4d;
+  color: #fe7f2d;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-left: 1px solid #233d4d;
+  border-right: 1px solid #233d4d;
+  cursor: pointer;
+}
+#adPageContent #infoSeller h4:hover {
+  color: #e9ecef;
+}
+#adPageContent #infoSeller div {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  border-left: 1px solid #e9ecef;
+  border-right: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+}
+#adPageContent #infoSeller div p {
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* ___ PAGE PERSO ___*/
+.contentProfil {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+#info,
+#modification,
+.adProfil {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#info,
+#modification {
+  background-color: white;
+}
+#info {
+  padding-bottom: 15px;
+}
+
+#info h3,
+.adProfil h3,
+.adProfil h3 {
+  width: 100%;
+  background-color: #233d4d;
+  color: #e9ecef;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#info .flexInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#info .flexInfo p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#info .flexInfo #modifBtn {
+  background-color: #233d4d;
+  color: #e9ecef;
+  padding: 1%;
+  cursor: pointer;
+}
+#info .flexInfo #modifBtn:hover {
+  background-color: #e9ecef;
+  color: #233d4d;
+}
+#modification {
+  padding-top: 30px;
+  border-top: 1px solid #e9ecef;
+}
+/*Ad*/
+#displayAdUp,
+#displayAdDown {
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#displayAdUp #inProgess,
+#displayAdUp #finished,
+#displayAdDown #inProgessCreated,
+#displayAdDown #finishedCreated {
+  background-color: white;
+  width: 29vw;
+}
+.adProfil .ad {
+  text-align: left;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 10px;
+}
+.adProfil .ad h4 {
+  font-size: 110%;
+  text-align: center;
+}
+.adProfil .ad p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.adProfil .ad .linkAd {
+  margin-top: 10px;
+  text-align: center;
+}
+#titleAdCreated {
+  margin-top: 60px;
+  width: 100%;
+  background-color: #233d4d;
+  color: #e9ecef;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+/*___Footer____*/
+footer {
+  background-color: #233d4d;
+  color: #e9ecef;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
